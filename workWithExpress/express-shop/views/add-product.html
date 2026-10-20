@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Express Shop</a>
+
+      <nav>
+        <a href="/">Shop</a>
+        <a href="/products">Products</a>
+        <a href="/admin/add-product">Add product</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <p class="eyebrow">Admin</p>
+      <h1>Add a product</h1>
+
+      <form action="/admin/add-product" method="POST">
+        <label for="title">Product title</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          required
+          maxlength="80"
+        />
+
+        <button class="button" type="submit">Save product</button>
+      </form>
+    </main>
+  </body>
+</html>

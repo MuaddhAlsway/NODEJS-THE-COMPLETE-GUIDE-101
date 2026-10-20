@@ -1,0 +1,5 @@
+Hello from Node.js!
+
+This file was read from the filesystem.
+
+Project 03 — File Processing Server
